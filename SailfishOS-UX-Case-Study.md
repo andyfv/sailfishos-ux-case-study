@@ -44,6 +44,7 @@ Let's take the current line of phones in the eco-system to find potential weak p
 
 ##### Current device line
 ![current devices](resources/images/sailfish-current-devices.webp)
+![current devices](resources/images/sailfish-current-devices.png)
 
 <br>
 
@@ -142,9 +143,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
 
 **`Where`** - it needs to go lower. This leave us with the Left, Right, Bottom edge to initiate it. The side edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
 
-**`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing.
-git 
-So let's see the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closings. Let's check it.
+**`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
 ![Sailfish Quick Close](resources/images/sailfish-swipe-comparison.svg)
 
