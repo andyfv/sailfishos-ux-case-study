@@ -1,4 +1,4 @@
-<link href="style.css" rel="stylesheet"></link>
+<link href="style.css" rel="stylesheet">
 
 <span style="font-family: Fira Code">
 
@@ -43,8 +43,10 @@ Let's take the current line of phones in the eco-system to find potential weak p
 <br>
 
 ##### Current device line
-![current devices](resources/images/sailfish-current-devices.webp)
-![current devices](resources/images/sailfish-current-devices.png)
+<p aling="center">
+    <img src="resource/images/sailfish-current-devices.png" 
+    width="640px">
+</p>
 
 <br>
 
@@ -52,22 +54,14 @@ Since not having a proper crowdsourcing I will be using screenshots (from review
 
 
 > - <strong>XA2</strong>: Most people hold the phone with their pinky on the bottom lip.
-
 > - <strong>XA2 Plus</strong>: Most people hold the phone more to the middle. Actually most people use the phone with two hands.
-
 > - <strong>XA2 Ultra</strong>: The same as XA2 Plus.
-</pre>
-
 
 With the **"one-handed"** information (which to be honest is not much, but still something) we can start analyzing:
 
-
 > - <strong>XA2</strong>: Keeping your pinky on the bottom lip of the phone still gives enough grip and the phone can be used for somewhat normal operation. Top of the screen is unreachable. The opposite horizontal edge is unreachable.
-
 > - <strong>XA2 Plus</strong>: Users hold the phone more to the middle. Most possible explanation is weight balance, otherwise there would not be enough grip. Bottom of the screen is harder to reach(more on that later). Top of the screen is unreachable. The opposite horizontal edge is unreachable.
-
 > - <strong>XA2 Ultra</strong>: The same as XA2 Plus.
-</pre>
 
 So we can see the most common weak point these days:
 
@@ -78,17 +72,16 @@ So we can see the most common weak point these days:
 **Check the weak points against Sailfish OS 3:**
 
 
-> <strong>1.</strong> One-handed navigation is even worse because unreachability to bottom edge in XA2 Plus and Ultra. 
+> <strong>1.</strong> One-handed navigation is even worse because unreachability 
+> <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable this is a problem. Also this is only possible from the left or right portion of the top edge.
 
-> <strong>2.</strong> Quick closing app on Sailfish 3 -  With the top of the screen being unreachable there is a problem. Also this is only possible from the left or right portion of the top edge.
 
-
-Other issues with navigation can mainly come from the size of the device and not the OS itself.
+Other issues can mainly come from the size of the device and not the OS itself.
 </pre>
 
 ***
 
-Thinking about worst case scenario, I tried to do a heatmap of the reachability situation on the XA2 Plus.
+Thinking about worst case scenario, I tried to make a heatmap of the reachability situation on the XA2 Plus.
 
 Now I will excuse myself again. This was done within limited usage time. And without proper crowdsourcing this shouldn't be taken seriously. Based on my hand size(considering myself having normal hand size).
 
@@ -100,9 +93,11 @@ Red Area - unreachable
 
 <br>
 
-![XA2 Plus Heatmap](https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resources/images/sailfish-devices-reachability.svg)
-
-<img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resources/images/sailfish-devices-reachability.svg">
+<p aling="center">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-devices-reachability.svg" 
+    alt="XA2 Plus Heatmap"
+    width="640px">
+</p>
 
 ***
 
@@ -112,11 +107,19 @@ Again, let's start with what we already have and then see if something can be pr
 
 Sailfish is a gesture based navigation. And in it's current state it looks like this:
 
-![Sailfish Navigation](resources/images/sailfish-navigation.svg)
+<p aling="center">
+    <img src="resource/images/sailfish-navigation.svg" 
+    alt="Sailfish Navigation"
+    width="320px">
+</p>
 
 And the **`Quick Close`** gesture is accessible only from the Top Left or the Top Right. And the Top of the screen is not easy to reach (especially on the XA2 Plus and Ultra). So here we can think about some improvement.
 
-![Sailfish Quick Close](resources/images/sailfish-quick-close.svg)
+<p aling="center">
+    <img src="resource/images/sailfish-quick-close.svg" 
+    alt="Sailfish Quick Close"
+    width="320px">
+</p>
 
 <br>
 
@@ -136,23 +139,71 @@ Let's examine the navigation screens which may have reachability issues.
 > <strong>4. Top Menu </strong>
 > - Some of the Quick Toggles on the Top may not be reachable.
 
-</pre>
+<br>
+<br>
+
+***
+
+#### Propositions
 
 Some propositions will be given to improve the current Navigation.
 
 Let's start with the `Quick Close`.
+
+
+#### * Quick Close
+
 Currently the `Quick Close` is triggered with a swipe down from the Left or the Right part of the Top edge. Since the Top edge of the screen is hardly reachable this can be improved. The problem is `where and how`.
 
 **`Where`** - it needs to go lower. This leave us with the Left, Right, Bottom edge to initiate it. The side edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
 
 **`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
-![Sailfish Quick Close](resources/images/sailfish-swipe-comparison.svg)
+<p aling="center">
+    <img src="resource/images/sailfish-swipe-comparison.svg" 
+    alt="Sailfish Swipe Comparison"
+    width="640px">
+</p>
 
-Now more complete overlook.
+Now more complete overlook with a hint at the top of the screen telling the user what is going to happen. 
 
-![Sailfish Quick Close](resources/video/SailfishOS_CloseApp.mp4)
+![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
+<p aling="center">
+    <video src="resource/video/SailfishOS_CloseApp.mp4" 
+    alt="Sailfish Close App"
+    width="320px">
+</p>
 
+Now the `Top Edge` is decluttered.
+
+Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will be better.
+
+<p aling="left">
+    <video src="resource/video/SailfishOS_TopMenuLeft.mp4" 
+    alt="Sailfish Top Menu Left"
+    width="240px">
+</p>
+<p aling="center">
+    <img src="resource/video/SailfishOS_TopMenu.mp4" 
+    alt="Sailfish Top Menu"
+    width="240px">
+</p>
+<p aling="right">
+    <img src="resource/video/SailfishOS_TopMenuRight.mp4" 
+    alt="Sailfish Top Menu Right"
+    width="240px">
+</p>
+
+<br>
+<br>
+
+Now, about reachability. What can be done without changing too much of the current UX/UI and driving away current users? `Home, Apps and  Events` screens are hard to improve UX-wise.
+
+What about the `Top Menu`?
+
+Since a lot of people are 
+
+#### * Quick Close
 
 
 </span>
