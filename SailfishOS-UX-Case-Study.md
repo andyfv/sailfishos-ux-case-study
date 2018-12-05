@@ -165,7 +165,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
     width="640px">
 </p>
 
-Now more complete overlook with a hint at the top of the screen telling the user what is going to happen. 
+And there it is a with a hint at the top of the screen telling the user what is going to happen. 
 
 ![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
 <p align="center">
@@ -176,20 +176,26 @@ Now more complete overlook with a hint at the top of the screen telling the user
 
 Now the `Top Edge` is decluttered.
 
-Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will be better.
+Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
 
-<p align="left">
+
+![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
+
+<div align="left">
     <video src="resource/video/SailfishOS_TopMenuLeft.mp4" 
     alt="Sailfish Top Menu Left"
-    width="240px">
-</p>
+    width="240px"
+    controls>
+</div>
+
 <p align="center">
-    <img src="resource/video/SailfishOS_TopMenu.mp4" 
+    <video src="resource/video/SailfishOS_TopMenu.mp4" 
     alt="Sailfish Top Menu"
     width="240px">
 </p>
+
 <p align="right">
-    <img src="resource/video/SailfishOS_TopMenuRight.mp4" 
+    <video src="resource/video/SailfishOS_TopMenuRight.mp4" 
     alt="Sailfish Top Menu Right"
     width="240px">
 </p>
