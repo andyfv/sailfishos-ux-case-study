@@ -43,7 +43,7 @@ Let's take the current line of phones in the eco-system to find potential weak p
 <br>
 
 ##### Current device line
-<p aling="center">
+<p align="center">
     <img src="resource/images/sailfish-current-devices.png" 
     width="640px">
 </p>
@@ -93,7 +93,7 @@ Red Area - unreachable
 
 <br>
 
-<p aling="center">
+<p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-devices-reachability.svg" 
     alt="XA2 Plus Heatmap"
     width="640px">
@@ -107,7 +107,7 @@ Again, let's start with what we already have and then see if something can be pr
 
 Sailfish is a gesture based navigation. And in it's current state it looks like this:
 
-<p aling="center">
+<p align="center">
     <img src="resource/images/sailfish-navigation.svg" 
     alt="Sailfish Navigation"
     width="320px">
@@ -115,7 +115,7 @@ Sailfish is a gesture based navigation. And in it's current state it looks like 
 
 And the **`Quick Close`** gesture is accessible only from the Top Left or the Top Right. And the Top of the screen is not easy to reach (especially on the XA2 Plus and Ultra). So here we can think about some improvement.
 
-<p aling="center">
+<p align="center">
     <img src="resource/images/sailfish-quick-close.svg" 
     alt="Sailfish Quick Close"
     width="320px">
@@ -159,7 +159,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
 
 **`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
-<p aling="center">
+<p align="center">
     <img src="resource/images/sailfish-swipe-comparison.svg" 
     alt="Sailfish Swipe Comparison"
     width="640px">
@@ -168,7 +168,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
 Now more complete overlook with a hint at the top of the screen telling the user what is going to happen. 
 
 ![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
-<p aling="center">
+<p align="center">
     <video src="resource/video/SailfishOS_CloseApp.mp4" 
     alt="Sailfish Close App"
     width="320px">
@@ -178,17 +178,17 @@ Now the `Top Edge` is decluttered.
 
 Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will be better.
 
-<p aling="left">
+<p align="left">
     <video src="resource/video/SailfishOS_TopMenuLeft.mp4" 
     alt="Sailfish Top Menu Left"
     width="240px">
 </p>
-<p aling="center">
+<p align="center">
     <img src="resource/video/SailfishOS_TopMenu.mp4" 
     alt="Sailfish Top Menu"
     width="240px">
 </p>
-<p aling="right">
+<p align="right">
     <img src="resource/video/SailfishOS_TopMenuRight.mp4" 
     alt="Sailfish Top Menu Right"
     width="240px">
