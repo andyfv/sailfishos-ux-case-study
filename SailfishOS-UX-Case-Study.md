@@ -100,7 +100,9 @@ Red Area - unreachable
 
 <br>
 
-![XA2 Plus Heatmap](resources/images/sailfish-devices-reachability.svg)
+![XA2 Plus Heatmap](https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resources/images/sailfish-devices-reachability.svg)
+
+<img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resources/images/sailfish-devices-reachability.svg">
 
 ***
 
