@@ -167,9 +167,8 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
 
 And there it is a with a hint at the top of the screen telling the user what is going to happen. 
 
-![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
 <p align="center">
-    <video src="resource/video/SailfishOS_CloseApp.mp4" 
+    <img src="resource/video/SailfishOS_CloseApp.gif" 
     alt="Sailfish Close App"
     width="320px">
 </p>
@@ -179,35 +178,42 @@ Now the `Top Edge` is decluttered.
 Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
 
 
-![Sailfish Quick Close](resource/video/SailfishOS_CloseApp.mp4)
-
-<div align="left">
-    <video src="resource/video/SailfishOS_TopMenuLeft.mp4" 
-    alt="Sailfish Top Menu Left"
-    width="240px"
-    controls>
-</div>
-
 <p align="center">
-    <video src="resource/video/SailfishOS_TopMenu.mp4" 
+    Left Swipe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    From Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Right Swipe
+</p>
+
+<div align="center" width=900px>
+<div align="left" width="240px">
+    <p>Left</p>
+    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
+    alt="Sailfish Top Menu Left"
+    width="240px">
+</div>
+<div align="center" width="240px">
+    <p>Left</p>
+    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
+    alt="Sailfish Top Menu Left"
+    width="240px">
+</div>
+    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
+    alt="Sailfish Top Menu Left"
+    width="240px">
+    <img src="resource/video/SailfishOS_TopMenu.gif" 
     alt="Sailfish Top Menu"
     width="240px">
-</p>
-
-<p align="right">
-    <video src="resource/video/SailfishOS_TopMenuRight.mp4" 
+    <img src="resource/video/SailfishOS_TopMenuRight.gif" 
     alt="Sailfish Top Menu Right"
     width="240px">
-</p>
+</div>
 
 <br>
 <br>
 
-Now, about reachability. What can be done without changing too much of the current UX/UI and driving away current users? `Home, Apps and  Events` screens are hard to improve UX-wise.
+ ***
 
-What about the `Top Menu`?
-
-Since a lot of people are 
+And for 
 
 #### * Quick Close
 
