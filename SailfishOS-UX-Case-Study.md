@@ -2,9 +2,9 @@
 
 <span style="font-family: Fira Code">
 
-# UX Case Study: Sailfish OS
+# Sailfish OS: UX Case Study
 
-As with most case studies the idea is to explore the current state in a particular area and make some propositions about impoving it.
+As with most case studies, the idea is to explore the current state in a particular area and make some propositions about impoving it.
 
 And the idea of this case study is to try improving the UX of Sailfish OS.
 
@@ -14,7 +14,7 @@ First, let's talk context. We have to deal with multiple contexts. So let's find
 
 ### 1. Hardware Limitations
 
-Now let's start with what we know. **`Jolla`** are not making hardware anymore so they don't have much control here. Taking this is concideration and moving on with the currently supported devices.
+Now let's start with what we know. **`Jolla`** are not making hardware anymore, so they don't have much control here. Taking this is concideration and moving on with the currently supported devices.
 
 
 <pre>
@@ -36,8 +36,6 @@ Phone makers are probably going to stay with the current trend of bigger screens
 
 In the context of hardware, the differences are mostly dimensional. Sadly, different and more inovative types of hardware for interacting with the devices are hard to find. So let’s focus just on the screen dimensions for now.
 
-<br>
-
 Let's take the current line of phones in the eco-system to find potential weak points.
 
 <br>
@@ -50,7 +48,7 @@ Let's take the current line of phones in the eco-system to find potential weak p
 
 <br>
 
-Since not having a proper crowdsourcing I will be using screenshots (from review videos) of one-handed use of actual people holding the various version and not just posing for picture with the product. We can see the following:
+Since not having a proper crowdsourcing I will be using screenshots (from review videos) of `one-handed use` of actual people holding the various version and not just posing for picture with the product. We can see the following:
 
 
 > - <strong>XA2</strong>: Most people hold the phone with their pinky on the bottom lip.
@@ -72,7 +70,8 @@ So we can see the most common weak point these days:
 **Check the weak points against Sailfish OS 3:**
 
 
-> <strong>1.</strong> One-handed navigation is even worse because unreachability 
+> <strong>1.</strong> One-handed use is worse because unreachability 
+
 > <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable, this is a problem. Also this action is only possible from the left or right portion of the top edge.
 
 
@@ -83,7 +82,7 @@ Other issues can mainly come from the size of the device and not the OS itself.
 
 Thinking about worst case scenario, I tried to make a heatmap of the reachability situation on the XA2 Plus.
 
-Now I will excuse myself again. This was done within limited usage time. And without proper crowdsourcing this shouldn't be taken seriously. Based on my hand size(considering myself having normal hand size).
+Now, I will excuse myself again. This was done within limited time. And without proper crowdsourcing this shouldn't be taken seriously. Based on my hand size(considering myself having normal hand size).
 
 ```
 Green Area - the reachable part of the screen
@@ -105,19 +104,11 @@ Red Area - unreachable
 
 Again, let's start with what we already have and then see if something can be proposed.
 
-Sailfish is a gesture based navigation. And in it's current state it looks like this:
+Sailfish is using `gesture based navigation`. And in it's current state it looks like this:
 
 <p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-navigation.svg" 
     alt="Sailfish Navigation"
-    width="320px">
-</p>
-
-And the **`Quick Close`** gesture is accessible only from the Top Left or the Top Right. And the Top of the screen is not easy to reach (especially on the XA2 Plus and Ultra). So here we can think about some improvement.
-
-<p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-quick-close.svg" 
-    alt="Sailfish Quick Close"
     width="320px">
 </p>
 
@@ -153,9 +144,15 @@ Let's start with the `Quick Close`.
 
 #### * Quick Close
 
-Currently the `Quick Close` is triggered with a swipe down from the Left or the Right part of the Top edge. Since the Top edge of the screen is hardly reachable this can be improved. The problem is `where and how`.
+<p align="center">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-quick-close.svg" 
+    alt="Sailfish Quick Close"
+    width="320px">
+</p>
 
-**`Where`** - it needs to go lower. This leave us with the Left, Right, Bottom edge to initiate it. The `Left/Right` edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
+Currently the `Quick Close` is triggered with a swipe down from the `Left/Right part of the Top edge`. Since the Top edge of the screen is hardly reachable(especially on the XA2 Plus and Ultra), this is an area which can be improved. The problem is `where` to move this action and `how` it will be triggered.
+
+**`Where`** - it needs to go lower. This leaves us with the Left, Right, Bottom edge to initiate it. The `Left and Right` edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
 
 **`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
@@ -165,7 +162,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
     width="640px">
 </p>
 
-And here it is a more complete overview with a hint at the top of the screen telling the user what is going to happen. 
+And here it is a more complete overview, with a hint at the top of the screen telling the user what is going to happen. 
 
 <p align="center">
     <img src="resource/video/SailfishOS_CloseApp.gif" 
@@ -179,7 +176,7 @@ Which lead us to the `Top Menu`.
 
 #### * Top Menu
 
- What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly usage. What if the swipe direction from `Home` to `Events` is stored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
+ What can be done here? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What about "one-handed" usage. What if the swipe direction from `Home` to `Events` is stored and used for rearanging the `Top Menu` in a more compact form. A demonstration will clear things out.
 
 <p align="center">
 
@@ -188,6 +185,10 @@ Which lead us to the `Top Menu`.
 | <img src="resource/video/SailfishOS_TopMenuLeft.gif" alt="Sailfish Top MenuLeft" width="240px">   | <img src="resource/video/SailfishOS_TopMenu.gif" alt="Sailfish Top Menu" width="240px"> | <img src="resource/video/SailfishOS_TopMenuRight.gif" alt="Sailfish Top Menu Right" width="240px"> |
 
 </p>
+
+<br>
+
+<br>
 
 This is not the about the UI (colors, icon shapes etc) but more about the UX, so here is a little comparison of the old vs the proposed:
 
@@ -214,15 +215,14 @@ And the _Presentational Component_ from the `Events Screen` can be leveraged, le
 - Temperature
 
 <br>
-<br>
 
  ***
 
 #### * System Search
 
-Final proposition.
+Final proposition about a feature which will be nice to have.
 
-Triggered only from the `Home Screen`. Two 'paddles' will apear when the user `Swipe Down + Hold`.
+Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `Swipe Down + Hold`. From there the swipe will be continued to either `Left` or `Right`.
 
 <p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_Search.gif" 
@@ -235,7 +235,7 @@ Triggered only from the `Home Screen`. Two 'paddles' will apear when the user `S
 
 <br>
 
-<p align="center">And view from above:</p>
+<p align="center">View from above with combining the proposed improvements:</p>
 
 <br>
 
