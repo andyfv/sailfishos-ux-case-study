@@ -175,13 +175,17 @@ And there it is a with a hint at the top of the screen telling the user what is 
 
 Now the `Top Edge` is decluttered.
 
-Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
+Which lead us to the `Top Menu`.
+
+#### * Quick Close
+
+ What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
 
 | Left Swipe | From Home | Right Swipe |
 | -------- | -------- | -------- |
 | <img src="resource/video/SailfishOS_TopMenuLeft.gif" alt="Sailfish Top MenuLeft" width="240px">   | <img src="resource/video/SailfishOS_TopMenu.gif" alt="Sailfish Top Menu" width="240px"> | <img src="resource/video/SailfishOS_TopMenuRight.gif" alt="Sailfish Top Menu Right" width="240px"> |
 
-This is not the about the UI (colors, icon shapes etc) but more about the UX so here is a little comparison of the old vs the proposed:
+This is not the about the UI (colors, icon shapes etc) but more about the UX, so here is a little comparison of the old vs the proposed:
 
 <p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-topmenu-comparison.svg" 
@@ -189,14 +193,44 @@ This is not the about the UI (colors, icon shapes etc) but more about the UX so 
     width="640px">
 </p>
 
+<p align="center">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-new-topmenu-landscape.svg" 
+    alt="Sailfish Swipe Comparison"
+    width="320px">
+</p>
+
+And the _Presentational Component_ from the `Events Screen` can be leveraged, leaving the Top part of the screen just for infomartion/metrics:
+- onChange Notifications for the `Quick Toggles` (ON/OFF)
+- Available Memory
+- Media player information
+- Temperature
+
 <br>
 <br>
 
  ***
 
-And for 
+#### * System Search
 
-#### * Quick Close
+Final proposition.
 
+Triggered only from the `Home Screen`.
+
+<p align="center">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_Search.gif" 
+    alt="Sailfish Search"
+    width="320px">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_SearchResults.gif" 
+    alt="Sailfish Search"
+    width="320px">
+</p>
+
+And view from above:
+
+<p align="center">
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-proposition-view.svg" 
+    alt="Sailfish Swipe Comparison"
+    width="640px">
+</p>
 
 </span>
