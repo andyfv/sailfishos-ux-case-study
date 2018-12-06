@@ -4,15 +4,15 @@
 
 # UX Case Study: Sailfish OS
 
-As with most case studies the idea is to explore the current state of a particular area and make some propositions about impoving it.
+As with most case studies the idea is to explore the current state in a particular area and make some propositions about impoving it.
 
-So without much babble let's get starting.
+And the idea of this case study is to try improving the UX of Sailfish OS.
 
 ***
 
 First, let's talk context. We have to deal with multiple contexts. So let's find the borders/limitations we have to work with.
 
-#### 1. Hardware Limitations
+### 1. Hardware Limitations
 
 Now let's start with what we know. **`Jolla`** are not making hardware anymore so they don't have much control here. Taking this is concideration and moving on with the currently supported devices.
 
@@ -42,7 +42,7 @@ Let's take the current line of phones in the eco-system to find potential weak p
 
 <br>
 
-##### Current device line
+<p align="center">Current device line</p>
 <p align="center">
     <img src="resource/images/sailfish-current-devices.png" 
     width="640px">
@@ -73,7 +73,7 @@ So we can see the most common weak point these days:
 
 
 > <strong>1.</strong> One-handed navigation is even worse because unreachability 
-> <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable this is a problem. Also this is only possible from the left or right portion of the top edge.
+> <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable, this is a problem. Also this action is only possible from the left or right portion of the top edge.
 
 
 Other issues can mainly come from the size of the device and not the OS itself.
@@ -101,7 +101,7 @@ Red Area - unreachable
 
 ***
 
-#### 2. Software Limitations
+### 2. Software Limitations
 
 Again, let's start with what we already have and then see if something can be proposed.
 
@@ -123,7 +123,7 @@ And the **`Quick Close`** gesture is accessible only from the Top Left or the To
 
 <br>
 
-Let's examine the navigation screens which may have reachability issues.
+Let's examine the **`navigation screens`** which may have reachability issues.
 
 
 > <strong>1. Home:</strong>
@@ -131,7 +131,7 @@ Let's examine the navigation screens which may have reachability issues.
 > - But with 3 App Covers on a row it may get tricky to hit App Covers in the opposite edges on the Top of the screen.
 
 > <strong>2. Events </strong>
-> - Since the Top part is used as a Presentational component with no controls,there are no problems.
+> - Since the Top part is used as a Presentational component with no controls, everything is perfect.
 
 > <strong>3. Apps </strong>
 > - App Icons on the Top may not be reachable.
@@ -144,9 +144,9 @@ Let's examine the navigation screens which may have reachability issues.
 
 ***
 
-#### Propositions
+### Propositions
 
-Some propositions will be given to improve the current Navigation.
+Some propositions will be given to improve the current `Navigation`.
 
 Let's start with the `Quick Close`.
 
@@ -155,7 +155,7 @@ Let's start with the `Quick Close`.
 
 Currently the `Quick Close` is triggered with a swipe down from the Left or the Right part of the Top edge. Since the Top edge of the screen is hardly reachable this can be improved. The problem is `where and how`.
 
-**`Where`** - it needs to go lower. This leave us with the Left, Right, Bottom edge to initiate it. The side edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
+**`Where`** - it needs to go lower. This leave us with the Left, Right, Bottom edge to initiate it. The `Left/Right` edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
 
 **`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
@@ -165,7 +165,7 @@ Currently the `Quick Close` is triggered with a swipe down from the Left or the 
     width="640px">
 </p>
 
-And there it is a with a hint at the top of the screen telling the user what is going to happen. 
+And here it is a more complete overview with a hint at the top of the screen telling the user what is going to happen. 
 
 <p align="center">
     <img src="resource/video/SailfishOS_CloseApp.gif" 
@@ -177,13 +177,17 @@ Now the `Top Edge` is decluttered.
 
 Which lead us to the `Top Menu`.
 
-#### * Quick Close
+#### * Top Menu
 
- What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
+ What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly usage. What if the swipe direction from `Home` to `Events` is stored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
+
+<p align="center">
 
 | Left Swipe | From Home | Right Swipe |
 | -------- | -------- | -------- |
 | <img src="resource/video/SailfishOS_TopMenuLeft.gif" alt="Sailfish Top MenuLeft" width="240px">   | <img src="resource/video/SailfishOS_TopMenu.gif" alt="Sailfish Top Menu" width="240px"> | <img src="resource/video/SailfishOS_TopMenuRight.gif" alt="Sailfish Top Menu Right" width="240px"> |
+
+</p>
 
 This is not the about the UI (colors, icon shapes etc) but more about the UX, so here is a little comparison of the old vs the proposed:
 
@@ -192,6 +196,10 @@ This is not the about the UI (colors, icon shapes etc) but more about the UX, so
     alt="Sailfish Swipe Comparison"
     width="640px">
 </p>
+
+<br>
+
+<p align="center">Landscape</p>
 
 <p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-new-topmenu-landscape.svg" 
@@ -214,7 +222,7 @@ And the _Presentational Component_ from the `Events Screen` can be leveraged, le
 
 Final proposition.
 
-Triggered only from the `Home Screen`.
+Triggered only from the `Home Screen`. Two 'paddles' will apear when the user `Swipe Down + Hold`.
 
 <p align="center">
     <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_Search.gif" 
@@ -225,10 +233,14 @@ Triggered only from the `Home Screen`.
     width="320px">
 </p>
 
-And view from above:
+<br>
+
+<p align="center">And view from above:</p>
+
+<br>
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-proposition-view.svg" 
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-proposition-view.png" 
     alt="Sailfish Swipe Comparison"
     width="640px">
 </p>
