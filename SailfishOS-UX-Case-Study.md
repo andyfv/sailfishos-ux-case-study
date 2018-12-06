@@ -177,36 +177,17 @@ Now the `Top Edge` is decluttered.
 
 Which lead us to the `Top Menu`. What can be done there? The `Top Menu` can be accessed from three places - from `Home, Events, In-App`. What if we want more "one-hand" friendly use. What if the swipe direction from `Home` to `Events` is recored and used for rearanging the `Top Menu` in a more compact form. Demonstration will clear out the idea.
 
+| Left Swipe | From Home | Right Swipe |
+| -------- | -------- | -------- |
+| <img src="resource/video/SailfishOS_TopMenuLeft.gif" alt="Sailfish Top MenuLeft" width="240px">   | <img src="resource/video/SailfishOS_TopMenu.gif" alt="Sailfish Top Menu" width="240px"> | <img src="resource/video/SailfishOS_TopMenuRight.gif" alt="Sailfish Top Menu Right" width="240px"> |
+
+This is not the about the UI (colors, icon shapes etc) but more about the UX so here is a little comparison of the old vs the proposed:
 
 <p align="center">
-    Left Swipe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    From Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Right Swipe
+    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-topmenu-comparison.svg" 
+    alt="Sailfish Swipe Comparison"
+    width="640px">
 </p>
-
-<div align="center" width=900px>
-<div align="left" width="240px">
-    <p>Left</p>
-    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
-    alt="Sailfish Top Menu Left"
-    width="240px">
-</div>
-<div align="center" width="240px">
-    <p>Left</p>
-    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
-    alt="Sailfish Top Menu Left"
-    width="240px">
-</div>
-    <img src="resource/video/SailfishOS_TopMenuLeft.gif" 
-    alt="Sailfish Top Menu Left"
-    width="240px">
-    <img src="resource/video/SailfishOS_TopMenu.gif" 
-    alt="Sailfish Top Menu"
-    width="240px">
-    <img src="resource/video/SailfishOS_TopMenuRight.gif" 
-    alt="Sailfish Top Menu Right"
-    width="240px">
-</div>
 
 <br>
 <br>
