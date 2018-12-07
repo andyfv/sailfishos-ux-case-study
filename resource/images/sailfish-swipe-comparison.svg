@@ -166,14 +166,14 @@
                     </g>
                 </g>
             </g>
-            <g id="Swipe1" serif:id="Swipe" transform="matrix(5.55112e-17,-1,1,5.55112e-17,-909.549,1856.84)">
+            <g id="Swipe1" serif:id="Swipe" transform="matrix(5.55112e-17,-1,1,5.55112e-17,-912.549,1821.98)">
                 <g transform="matrix(0.838843,0,0,0.838843,98.8265,234.219)">
-                    <path d="M658.02,1320.01C392.71,1291.7 305.953,1438.59 334,1659" style="fill:none;stroke:rgb(217,217,217);stroke-width:17.88px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
+                    <path d="M658.02,1320.01C347.456,1317.39 336.35,1323.64 337.292,1705.49" style="fill:none;stroke:rgb(217,217,217);stroke-width:17.88px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"/>
                 </g>
-                <g id="Location--filled-2" serif:id="Location (filled)" transform="matrix(1.74078,1.74078,-1.74078,1.74078,1139.01,120.375)">
+                <g id="Location--filled-2" serif:id="Location (filled)" transform="matrix(1.80795,1.67092,-1.67092,1.80795,1088.67,102.778)">
                     <path d="M230.3,470.5L184.3,490.5L210.3,490.5L210.3,514.5L230.3,470.5Z" style="fill:rgb(255,90,90);fill-rule:nonzero;"/>
                 </g>
-                <g id="Location--filled-3" serif:id="Location (filled)" transform="matrix(-1.95116,1.50121,-1.50121,-1.95116,1524.58,2272.89)">
+                <g id="Location--filled-3" serif:id="Location (filled)" transform="matrix(-1.74078,1.74078,-1.74078,-1.74078,1599.96,2152.62)">
                     <path d="M230.3,470.5L184.3,490.5L210.3,490.5L210.3,514.5L230.3,470.5Z" style="fill:rgb(255,90,90);fill-rule:nonzero;"/>
                 </g>
             </g>
