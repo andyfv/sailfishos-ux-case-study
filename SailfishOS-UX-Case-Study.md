@@ -4,9 +4,9 @@
 
 # Sailfish OS: UX Case Study
 
-As with most case studies, the idea is to explore the current state in a particular area and make some propositions about impoving it.
+As with most case studies, the idea is to explore the current state of a particular area and make some propositions about improving it.
 
-And the idea of this case study is to try improving the UX of Sailfish OS.
+And the area of this case study is the UX of Sailfish OS(which is already pretty good). Of course, the proposed ideas shouldn't be too harsh and drive away the current users.
 
 ***
 
@@ -55,15 +55,19 @@ Since not having a proper crowdsourcing I will be using screenshots (from review
 > - <strong>XA2 Plus</strong>: Most people hold the phone more to the middle. Actually most people use the phone with two hands.
 > - <strong>XA2 Ultra</strong>: The same as XA2 Plus.
 
-With the **"one-handed"** information (which to be honest is not much, but still something) we can start analyzing:
+<br>
+
+With the this information (which to be honest is not much, but still something) we can start analyzing:
 
 > - <strong>XA2</strong>: Keeping your pinky on the bottom lip of the phone still gives enough grip and the phone can be used for somewhat normal operation. Top of the screen is unreachable. The opposite horizontal edge is unreachable.
 > - <strong>XA2 Plus</strong>: Users hold the phone more to the middle. Most possible explanation is weight balance, otherwise there would not be enough grip. Bottom of the screen is harder to reach(more on that later). Top of the screen is unreachable. The opposite horizontal edge is unreachable.
 > - <strong>XA2 Ultra</strong>: The same as XA2 Plus.
 
+<br>
+
 So we can see the most common weak point these days:
 
-- **Reachability** - in all versions of the XA2
+> - **Reachability** - in all versions of the XA2
 
 <br>
 
@@ -71,9 +75,10 @@ So we can see the most common weak point these days:
 
 
 > <strong>1.</strong> One-handed use is worse because unreachability 
+>
+> <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable, this is a problem. Also this action is only possible from the left or right portion of the top edge, which make it tricky to use.
 
-> <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable, this is a problem. Also this action is only possible from the left or right portion of the top edge.
-
+<br>
 
 Other issues can mainly come from the size of the device and not the OS itself.
 </pre>
@@ -84,11 +89,11 @@ Thinking about worst case scenario, I tried to make a heatmap of the reachabilit
 
 Now, I will excuse myself again. This was done within limited time. And without proper crowdsourcing this shouldn't be taken seriously. Based on my hand size(considering myself having normal hand size).
 
-```
-Green Area - the reachable part of the screen
-Orange Area - the trickier to reach part of the screen
-Red Area - unreachable
-```
+> `Green Area` - the reachable part of the screen
+>
+> `Orange Area` - the trickier to reach part of the screen
+>
+> `Red Area` - unreachable
 
 <br>
 
@@ -154,7 +159,7 @@ Currently the `Quick Close` is triggered with a swipe down from the `Left/Right 
 
 **`Where`** - it needs to go lower. This leaves us with the Left, Right, Bottom edge to initiate it. The `Left and Right` edges give us best reachability regardless of the way the phone is held. So lets try from the Left and Right edge.
 
-**`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
+**`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events and also to minimize Apps. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
 <p align="center">
     <img src="resource/images/sailfish-swipe-comparison.svg" 
@@ -162,7 +167,9 @@ Currently the `Quick Close` is triggered with a swipe down from the `Left/Right 
     width="640px">
 </p>
 
-And here it is a more complete overview, with a hint at the top of the screen telling the user what is going to happen. 
+<br>
+
+And here it is a more complete overview, with a hint at the top of the screen, telling the user what is going to happen. 
 
 <p align="center">
     <img src="resource/video/SailfishOS_CloseApp.gif" 
@@ -173,6 +180,8 @@ And here it is a more complete overview, with a hint at the top of the screen te
 Now the `Top Edge` is decluttered.
 
 Which lead us to the `Top Menu`.
+
+***
 
 #### * Top Menu
 
@@ -190,7 +199,7 @@ Which lead us to the `Top Menu`.
 
 <br>
 
-This is not the about the UI (colors, icon shapes etc) but more about the UX, so here is a little comparison of the old vs the proposed:
+This is not the about the UI (colors, icon shapes etc), but more about the UX, so here is a little comparison of the old vs the proposed:
 
 <p align="center">
     <img src="resource/images/sailfish-topmenu-comparison.svg" 
@@ -217,12 +226,18 @@ And the _Presentational Component_ from the `Events Screen` can be leveraged, le
 <br>
 
  ***
+ 
+ <br>
+ 
+The final proposition is about a feature which will be nice to have.
+
+<br>
 
 #### * System Search
 
-Final proposition about a feature which will be nice to have.
+Triggered only from the `Home Screen and Events`.
 
-Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `Swipe Down + Hold`. From there the swipe will be continued to either `Left` or `Right`.
+Two 'paddles' will apear on `Swipe Down + Hold`. From there the swipe will be continued to either `Left` or `Right`.
 
 <p align="center">
     <img src="resource/video/SailfishOS_Search.gif" 
@@ -235,7 +250,7 @@ Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `S
 
 <br>
 
-<p align="center">View from above with combining the proposed improvements:</p>
+<p align="center">View from above of the proposed navigation improvements:</p>
 
 <br>
 
@@ -245,4 +260,10 @@ Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `S
     width="640px">
 </p>
 
-</span>
+#### * App Drawer
+
+<br>
+
+The `App Drawer` will be hard to improve without reducing the interactive area.
+
+<br>
