@@ -93,7 +93,7 @@ Red Area - unreachable
 <br>
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-devices-reachability.svg" 
+    <img src="resource/images/sailfish-devices-reachability.svg" 
     alt="XA2 Plus Heatmap"
     width="640px">
 </p>
@@ -107,7 +107,7 @@ Again, let's start with what we already have and then see if something can be pr
 Sailfish is using `gesture based navigation`. And in it's current state it looks like this:
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-navigation.svg" 
+    <img src="resource/images/sailfish-navigation.svg" 
     alt="Sailfish Navigation"
     width="320px">
 </p>
@@ -145,7 +145,7 @@ Let's start with the `Quick Close`.
 #### * Quick Close
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-quick-close.svg" 
+    <img src="resource/images/sailfish-quick-close.svg" 
     alt="Sailfish Quick Close"
     width="320px">
 </p>
@@ -157,7 +157,7 @@ Currently the `Quick Close` is triggered with a swipe down from the `Left/Right 
 **`How`**(it will be triggered?) - The `Left` and `Right` edges are used for Navigation between Home and Events. So we will need new gesture. Something without adding too much complexity and preventing accidental closing. So let's check the natural swipe direction and go from there. The natural direction of a swipe from the edge is sideways and going down. So if the opposite direction is used for `Quick Closing` an App, this will prevent from accidental closing. Let's check it.
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-swipe-comparison.svg" 
+    <img src="resource/images/sailfish-swipe-comparison.svg" 
     alt="Sailfish Swipe Comparison"
     width="640px">
 </p>
@@ -193,7 +193,7 @@ Which lead us to the `Top Menu`.
 This is not the about the UI (colors, icon shapes etc) but more about the UX, so here is a little comparison of the old vs the proposed:
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-topmenu-comparison.svg" 
+    <img src="resource/images/sailfish-topmenu-comparison.svg" 
     alt="Sailfish Swipe Comparison"
     width="640px">
 </p>
@@ -203,7 +203,7 @@ This is not the about the UI (colors, icon shapes etc) but more about the UX, so
 <p align="center">Landscape</p>
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-new-topmenu-landscape.svg" 
+    <img src="resource/images/sailfish-new-topmenu-landscape.svg" 
     alt="Sailfish Swipe Comparison"
     width="320px">
 </p>
@@ -225,10 +225,10 @@ Final proposition about a feature which will be nice to have.
 Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `Swipe Down + Hold`. From there the swipe will be continued to either `Left` or `Right`.
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_Search.gif" 
+    <img src="resource/video/SailfishOS_Search.gif" 
     alt="Sailfish Search"
     width="320px">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/video/SailfishOS_SearchResults.gif" 
+    <img src="resource/video/SailfishOS_SearchResults.gif" 
     alt="Sailfish Search"
     width="320px">
 </p>
@@ -240,7 +240,7 @@ Triggered only from the `Home Screen and Events`. Two 'paddles' will apear on `S
 <br>
 
 <p align="center">
-    <img src="https://gitlab.com/andyfv/sailfishos-ux-case-study/raw/master/resource/images/sailfish-proposition-view.png" 
+    <img src="resource/images/sailfish-proposition-view.png" 
     alt="Sailfish Swipe Comparison"
     width="640px">
 </p>
