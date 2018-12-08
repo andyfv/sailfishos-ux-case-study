@@ -30,8 +30,6 @@ Now let's start with what we know. **`Jolla`** are not making hardware anymore, 
 - Jolla Tablet (7.85inch, 4:3 ratio)
 </pre>
 
-/pagebreak
-
 Based on the screen sizes we can limit the scope a bit.
 Phone makers are probably going to stay with the current trend of bigger screens for some time. (Possibly the upcoming folding phones will disrupt this trend).
 
