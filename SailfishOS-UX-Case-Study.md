@@ -14,7 +14,7 @@ First, let's talk context. We have to deal with multiple contexts. So let's find
 
 ### 1. Hardware Limitations
 
-Now let's start with what we know. **`Jolla`** are not making hardware anymore, so they don't have much control here. Taking this is concideration and moving on with the currently supported devices.
+Now let's start with what we know. **`Jolla`** are not making hardware anymore, so they don't have much control here. Taking this is consideration and moving on with the currently supported devices.
 
 
 <pre>
@@ -30,11 +30,12 @@ Now let's start with what we know. **`Jolla`** are not making hardware anymore, 
 - Jolla Tablet (7.85inch, 4:3 ratio)
 </pre>
 
+/pagebreak
 
 Based on the screen sizes we can limit the scope a bit.
-Phone makers are probably going to stay with the current trend of bigger screens for some time. (Possibly the upcomming folding phones will disrupt this trend).
+Phone makers are probably going to stay with the current trend of bigger screens for some time. (Possibly the upcoming folding phones will disrupt this trend).
 
-In the context of hardware, the differences are mostly dimensional. Sadly, different and more inovative types of hardware for interacting with the devices are hard to find. So let’s focus just on the screen dimensions for now.
+In the context of hardware, the differences are mostly dimensional. Sadly, different and more innovative types of hardware for interacting with the devices are hard to find. So let’s focus just on the screen dimensions for now.
 
 Let's take the current line of phones in the eco-system to find potential weak points.
 
