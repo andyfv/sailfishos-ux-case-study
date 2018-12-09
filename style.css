@@ -26,8 +26,9 @@ hr {
   }
 
 .page {
-    background-color: rgb(238, 235, 225);
-    background-color: rgb(221, 214, 193);
+    background-color: rgb(228, 222, 203);
+    /* background-color: rgb(238, 235, 225); */
+    /* background-color: rgb(221, 214, 193); */
     position: relative;
     align-self: center;
     margin: 20px auto 60px auto;
@@ -57,9 +58,9 @@ hr {
     font-weight: lighter;
     font-size: 0.9em;
     color: rgb(255, 255, 255);
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.75);
 }
 
 .block {
@@ -79,31 +80,24 @@ hr {
     box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.75);
 }
 
-.green {
-    background-color: #7FCF59;
+.highlight-color {
     border-radius: 4px;
     padding-right: 5px;
     padding-left: 5px;
     margin-top: 5px;
     color: white;
+}
+
+.green {
+    background-color: #7FCF59;
 }
 
 .orange {
     background-color: #DE6818;
-    border-radius: 4px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 5px;
-    color: white;
 }
 
 .red {
     background-color: #A93C39;
-    border-radius: 4px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-top: 5px;
-    color: white;
 }
 
 #top-menu-container {
@@ -116,4 +110,8 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.underline {
+    text-decoration: underline;
 }
