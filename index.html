@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet">
+    <link rel="icon" href="/resource//images/favicon.ico">
+    <title>SailfishOS: UX Desgin Study</title>
+</head>
+
+<body>
+    <!-- <section class="page"> -->
+
+    <article class="page">
+
+        <div class="text">
+
+            <h1>Sailfish OS: UX Case Study</h1>
+
+            <hr>
+
+            <p>
+                As with most case studies, the idea is to explore the current state of a
+                particular area and make some propositions about improving it.
+            </p>
+
+            <p>
+                And the area of this case study is the UX of
+                Sailfish OS(which is already pretty good).
+                Of course, the proposed ideas shouldn't be
+                too harsh and drive away the current users.
+            </p>
+
+            <hr>
+
+            <p>
+                First, let's talk context. We have to deal with multiple contexts.
+                So let's find the borders/limitations we have to work with.
+            </p>
+
+            <h2>1. Hardware Limitations</h2>
+
+            <p>
+                Now let's start with what we know. <span class="highlight"><strong>Jolla</strong></span> are not making
+                hardware anymore, so they don't have much control here. Taking
+                this is consideration and moving on with the currently
+                supported devices.
+            </p>
+
+
+            <p class="block">
+                <strong>Mobile Phones</strong>:
+                - Jolla (4.5 inch, 16:9 ratio)
+                - Jolla C (5.0 inch, 16:9 ratio)
+                - Sony Xperia X (5.0 inch, 16:9 ratio)
+                - Sony XA2 (5.2 inch, 16:9 ratio)
+                - Sony XA2 Ultra (6.0 inch, 16:9 ratio)
+                - Sony XA2 Plus (6.0 inch, 18:9 ratio)
+
+                <strong>Tablets</strong>:
+                - Jolla Tablet (7.85inch, 4:3 ratio)
+            </p>
+
+            <br>
+
+            <p>
+                Based on the screen sizes we can limit the scope a bit.
+                Phone makers are probably going to stay with the current
+                trend of bigger screens for some time. (Possibly the upcoming
+                folding phones will disrupt this trend).
+            </p>
+
+            <p>
+                In the context of hardware, the differences are mostly dimensional.
+                Sadly, different and more innovative types of hardware for interacting
+                with the devices are hard to find. So let’s focus just on the screen
+                dimensions for now.
+            </p>
+
+            <p>
+                Let's take the current line of phones in the eco-system to
+                find potential weak points.
+            </p>
+
+            <p align="center">
+                <strong>Current device line</strong>
+            </p>
+
+            <p align="center">
+                <img src="resource/images/sailfish-current-devices.png" width="640px">
+            </p>
+
+            <br>
+
+            <p>
+                Since not having a proper crowdsourcing I will be using screenshots
+                (from review videos) of `one-handed use` of actual people interacting with the
+                various version and not just posing for picture with the product.
+                We can see the following:
+            </p>
+
+
+            <div class="block">
+                <strong> - XA2</strong>: Most people hold the phone with their pinky on the bottom lip.
+
+                <strong> - XA2 Plus</strong>: Most people hold the phone more to the middle. Actually most people use the phone with two hands.
+
+                <strong> - XA2 Ultra</strong>: The same as XA2 Plus.
+            </div>
+
+            <br>
+
+            <p>
+                With the this information (which to be honest is not much, but still something) we can start analyzing:
+            </p>
+
+
+            <p class="block">
+                <strong> - XA2</strong>: Keeping your pinky on the bottom lip of the phone still gives enough grip and the phone can be used for somewhat normal operation. Top of the screen is unreachable. The opposite horizontal edge is unreachable.
+
+                <strong> - XA2 Plus</strong>: Users hold the phone more to the middle. Most possible explanation is weight balance, otherwise there would not be enough grip. Bottom of the screen is harder to reach(more on that later). Top of the screen is unreachable. The opposite horizontal edge is unreachable.
+
+                <strong> - XA2 Ultra</strong>: The same as XA2 Plus.
+            </p>
+
+            <br>
+
+            <p>So we can see the most common weak point these days:</p>
+
+            <p class="block">
+                <strong>Reachability</strong> - in all versions of the XA2
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Check the weak points against Sailfish OS 3:</p></strong>
+            </p>
+
+
+            <div class="block">
+                <strong>1.</strong> One-handed use is worse because unreachability
+    
+                <strong>2.</strong> Quick closing an App on Sailfish 3 - with the top of the screen being unreachable, this is a problem. Also this action is only possible from the left or right portion of the top edge, which make it tricky to use.
+            </div>
+
+            <br>
+
+            <p>
+                Other issues can mainly come from the size of the device and not the OS itself.
+            </p>
+
+            <hr>
+
+            <br>
+
+            <p>
+                Thinking about worst case scenario, I tried to make a heatmap
+                of the reachability situation on the XA2 Plus.
+            </p>
+
+            <p>
+                Now, I will excuse myself again. This was done within limited time.
+                And without proper crowdsourcing this shouldn't be taken seriously.
+                Based on my hand size(considering myself having normal hand size).
+            </p>
+
+
+            <p class="block">
+                <span class="green">Green Area</span> - the reachable part of the screen
+
+                <span class="orange">Orange Area</span> - the trickier to reach part of the screen
+
+                <span class="red">Red Area</span> - unreachable
+            </p>
+
+            <br>
+
+            <p align="center">
+                <img src="resource/images/sailfish-devices-reachability.svg" alt="XA2 Plus Heatmap" width="640px">
+            </p>
+
+            <br>
+
+            <hr>
+
+            <br>
+
+            <h2>2. Software Limitations</h1>
+
+                <p>
+                    Again, let's start with what we already have and then see if
+                    something can be proposed.
+                </p>
+
+                <p>
+                    Sailfish is using <span class="highlight">gesture based navigation</span>. And in it's current
+                    state it looks like this:
+                </p>
+
+                <p align="center">
+                    <img src="resource/images/sailfish-navigation.svg" alt="Sailfish Navigation" width="320px">
+                </p>
+
+                <br>
+
+                <p>
+                    Let's examine the <span class="highlight">navigation screens</span> which may have reachability
+                    issues.
+                </p>
+
+                <p class="block">
+                    <strong>1. Home:</strong>
+                    With just 2 App Covers on a row there will be no problem.
+                    
+                    But with 3 App Covers on a row it may get tricky to hit App Covers in the opposite edges on the Top of the screen.
+
+                    <strong>2. Events </strong>
+                    Since the Top part is used as a Presentational component with no controls, everything is perfect.
+
+                    <strong>3. Apps </strong>
+                    App Icons on the Top may not be reachable.
+
+                    <strong>4. Top Menu </strong>
+                    Some of the Quick Toggles on the Top may not be reachable.
+                </p>
+
+                <br>
+                <br>
+
+                <hr>
+
+                <br>
+
+                <h2>3. Propositions</h2>
+
+                <br>
+
+                <p>Some propositions will be given to improve the current
+                    <span class="highlight">Navigation</span>.
+                </p>
+                <p>Let's start with the <span class="highlight">Quick Close</span>.</p>
+
+                <br>
+
+                <h3>Quick Close</h3>
+
+                <p align="center">
+                    <img src="resource/images/sailfish-quick-close.svg" alt="Sailfish Quick Close" width="320px">
+                </p>
+
+                <br>
+
+                <p>
+                    Currently the <span class="highlight">Quick Close</span> is triggered
+                    with a swipe down from the
+                    <span class="highlight">Left/Right part of the Top edge</span>. Since the
+                    Top edge of the screen is hardly reachable(especially on the XA2 Plus
+                    and Ultra), this is an area which can be improved. The problem is
+                    <span class="highlight">where</span> to move this action and
+                    <span class="highlight">how</span> it will be triggered.
+                </p>
+
+                <br>
+
+                <p>
+                    <span class="highlight">Where</span> - it needs to go lower.
+                    This leaves us with the Left, Right, Bottom edge to initiate it.
+                    The Left and Right edges give us best reachability regardless of
+                    the way the phone is held. So lets try from the
+                    <span class="highlight">Left and Right edges</span>.
+                </p>
+
+                <br>
+
+                <p>
+                    <span class="highlight">How</span> (it will be triggered?) -
+                    The <span class="highlight">Left and Right edges</span> edges are used for
+                    Navigation between Home and Events and also to minimize Apps. So we will need new gesture.
+                    Something without adding too much complexity and preventing accidental
+                    closing. So, let's check the natural swipe direction and go from there.
+                    The natural direction of a swipe from the edge is sideways and going down.
+                    So if the opposite direction is used for
+                    <span class="highlight">Quick Closing</span> an App,
+                    this will prevent from accidental closing. Let's check it.
+                </p>
+
+                <p align="center">
+                    <img src="resource/images/sailfish-swipe-comparison.svg" alt="Sailfish Swipe Comparison" width="640px">
+                </p>
+
+                <br>
+
+                <p>
+                    And here it is a more complete overview, with a hint at the
+                    top of the screen, telling the user what is going to happen.
+                </p>
+
+                <p align="center">
+                    <img src="resource/video/SailfishOS_CloseApp.gif" alt="Sailfish Close App" width="320px">
+                </p>
+
+                <br>
+
+                <p>Now the <span class="highlight">Top Edge</span> is decluttered.</p>
+
+                <p>Which lead us to the <span class="highlight">Top Menu</span>.</p>
+
+                <br>
+                <hr>
+                <br>
+
+                <h3>Top Menu</h3>
+
+                <p>
+                    What can be done here? The
+                    <span class="highlight">Top Menu</span> can be accessed from
+                    three places - from
+                    <span class="highlight">Home, Events, In-App</span>.
+                    What about "one-handed" usage.
+                    What if the swipe direction from
+                    <span class="highlight">Home</span> to
+                    <span class="highlight">Events</span> is stored and used
+                    for rearanging the <span class="highlight">Top Menu</span>
+                    in a more compact form.
+                    A demonstration will clear things out.
+                </p>
+
+                <div id="top-menu-container" align="center" >
+                    <div>
+                        <p>Left Swipe</p>
+                        <img src="resource/video/SailfishOS_TopMenuLeft.gif" alt="Sailfish Top MenuLeft" width="220px">
+                    </div>
+                    <div>
+                        <p>From Home</p>
+                        <img src="resource/video/SailfishOS_TopMenu.gif" alt="Sailfish Top Menu" width="220px">
+                    </div>
+                    <div>
+                        <p>Right Swipe</p>
+                        <img src="resource/video/SailfishOS_TopMenuRight.gif" alt="Sailfish Top Menu Right" width="220px">
+                    </div>
+                </div>
+
+                <br>
+
+                <br>
+
+                <p>
+                    This is not the about the UI (colors, icon shapes. etc),
+                    but more about the UX, so here is a little comparison of
+                    the proposed vs the old:
+                </p>
+
+                <p align="center">
+                    <img src="resource/images/sailfish-topmenu-comparison.svg" alt="Sailfish Swipe Comparison" width="640px">
+                </p>
+
+                <br>
+
+                <p align="center">Landscape</p>
+                
+                <p align="center">
+                    <img src="resource/images/sailfish-new-topmenu-landscape.svg" alt="Sailfish Swipe Comparison" width="320px">
+                </p>
+
+                <p>And the <span class="highlight">Presentational Component</span>
+                    from the <span>Events Screen</span> can be leveraged, leaving
+                    the Top part of the screen just for infomartion/metrics:
+                </p>
+
+                <p class="block">
+                    - onChange Notifications for the <span class="highlight">Quick Toggles</span> (ON/OFF)
+                    - Available Memory
+                    - Media player information
+                    - Temperature
+                </p>
+
+                <br>
+
+                <hr>
+
+                <p>
+                    The final proposition is about a feature which will be nice to have.
+                </p>
+
+                <br>
+
+                <h3>System Search</h3>
+
+                <p>
+                    Triggered only from the <span class="highlight">Home Screen and Events</span>.
+                </p>
+
+                <p>
+                    Two 'paddles' will apear on <span class="highlight">Swipe Down + Hold</span>.
+                    From there the swipe will be continued to either
+                    <span class="highlight">Left</span> or <span class="highlight">Right</span>.
+                </p>
+
+                <p align="center">
+                    <img src="resource/video/SailfishOS_Search.gif" alt="Sailfish Search" width="320px">
+                    <img src="resource/video/SailfishOS_SearchResults.gif" alt="Sailfish Search" width="320px">
+                </p>
+
+                <br>
+
+                <p align="center">View from above of the proposed navigation improvements:</p>
+
+                <p align="center">
+                    <img src="resource/images/sailfish-proposition-view.png" alt="Sailfish Swipe Comparison" width="640px">
+                </p>
+
+                <h3>App Drawer</h3>
+
+                <p>
+                    The <span class="highlight">App Drawer</span> will be hard to improve
+                    without reducing the interactive area. Leaving it as it is, for now.
+                </p>
+
+                <br>
+        </div>
+    </article>
+    <!-- </section> -->
+</body>
+
+</html>
