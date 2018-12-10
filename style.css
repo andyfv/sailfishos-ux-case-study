@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(110, 109, 104);
+    /* background-color: rgb(110, 109, 104); */
+    background-color: rgb(224, 224, 224);
     font-family: 'Fira Mono';
     justify-content: center;
     display: flex;
@@ -26,7 +27,8 @@ hr {
   }
 
 .page {
-    background-color: rgb(228, 222, 203);
+    /* background-color: rgb(228, 222, 203); */
+    background-color: white;
     /* background-color: rgb(238, 235, 225); */
     /* background-color: rgb(221, 214, 193); */
     position: relative;
